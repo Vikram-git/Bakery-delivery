@@ -10,9 +10,12 @@ import AdminDashboard from './pages/AdminDashboard'
 import MyOrders from './pages/MyOrders'
 import './App.css'
 
+const routerBasename =
+  import.meta.env.BASE_URL === '/' ? undefined : import.meta.env.BASE_URL.replace(/\/$/, '')
+
 function App() {
   return (
-    <Router>
+    <Router basename={routerBasename}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
