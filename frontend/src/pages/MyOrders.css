@@ -1,0 +1,224 @@
+.my-orders-page {
+  min-height: calc(100vh - 80px);
+  background: var(--cream-light);
+  padding: 48px 20px 64px;
+}
+
+.my-orders-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.my-orders-header {
+  margin-bottom: 32px;
+}
+
+.my-orders-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: var(--text-dark);
+  margin: 0 0 8px;
+}
+
+.my-orders-header p {
+  color: var(--text-light);
+  margin: 0;
+  font-size: 16px;
+}
+
+.my-orders-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.my-orders-refresh {
+  padding: 10px 18px;
+  background: #fff;
+  border: 2px solid var(--brown-light);
+  border-radius: 8px;
+  color: var(--brown-medium);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.my-orders-refresh:hover {
+  background: var(--cream-light);
+  border-color: var(--brown-medium);
+}
+
+.my-orders-loading,
+.my-orders-error {
+  text-align: center;
+  padding: 48px 20px;
+  color: var(--text-light);
+}
+
+.my-orders-error {
+  color: #c0392b;
+  background: #fdeaea;
+  border-radius: 10px;
+  border: 1px solid #f5c6cb;
+}
+
+.my-orders-empty {
+  text-align: center;
+  padding: 56px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.my-orders-empty h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--text-dark);
+  margin: 0 0 12px;
+}
+
+.my-orders-empty p {
+  color: var(--text-light);
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.my-orders-empty a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--brown-medium);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.my-orders-empty a:hover {
+  background: var(--brown-light);
+}
+
+.my-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.my-order-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 22px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(139, 90, 60, 0.1);
+}
+
+.my-order-card__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.my-order-card__ref {
+  font-family: ui-monospace, monospace;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--brown-medium);
+  letter-spacing: 0.03em;
+}
+
+.my-order-card__date {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.my-order-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.my-order-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.my-order-type {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.my-order-card__total {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.my-order-items-preview {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.my-order-toggle {
+  background: none;
+  border: none;
+  color: var(--brown-medium);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.my-order-toggle:hover {
+  color: var(--brown-light);
+}
+
+.my-order-detail {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--cream);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.my-order-detail ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.my-order-detail li {
+  margin-bottom: 4px;
+}
+
+.my-order-detail-label {
+  font-weight: 600;
+  color: var(--text-light);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.my-order-detail-label:first-child {
+  margin-top: 0;
+}

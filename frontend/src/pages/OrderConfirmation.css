@@ -1,0 +1,226 @@
+.order-confirmation {
+  min-height: calc(100vh - 120px);
+  background: var(--cream-light);
+  padding: 48px 20px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.order-confirmation__card {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 36px;
+  box-shadow: 0 8px 32px rgba(62, 39, 35, 0.08);
+  border: 1px solid rgba(139, 90, 60, 0.12);
+}
+
+.order-confirmation__badge {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #6d4c41, var(--brown-medium));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-confirmation__check {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.order-confirmation__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  text-align: center;
+  color: var(--text-dark);
+  margin: 0 0 12px;
+}
+
+.order-confirmation__lead {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 28px;
+}
+
+.order-confirmation__ref-block {
+  text-align: center;
+  padding: 20px;
+  background: var(--cream-light);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.order-confirmation__ref-label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.order-confirmation__ref-value {
+  display: block;
+  font-family: ui-monospace, monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--brown-medium);
+  letter-spacing: 0.04em;
+}
+
+.order-confirmation__ref-hint {
+  display: block;
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.order-confirmation__eta {
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-dark);
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.order-confirmation__meta {
+  display: grid;
+  gap: 14px;
+  padding: 20px 0;
+  border-top: 1px solid var(--cream);
+  border-bottom: 1px solid var(--cream);
+  margin-bottom: 20px;
+}
+
+.order-confirmation__meta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+}
+
+.meta-value {
+  font-size: 15px;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.order-confirmation__address {
+  margin-bottom: 24px;
+}
+
+.order-confirmation__address-text {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-dark);
+}
+
+.order-confirmation__items-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin: 0 0 14px;
+  color: var(--text-dark);
+}
+
+.order-confirmation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order-confirmation__list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--cream);
+  font-size: 15px;
+  color: var(--text-dark);
+}
+
+.order-confirmation__list li:last-child {
+  border-bottom: none;
+}
+
+.order-confirmation__total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid var(--cream);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--brown-medium);
+}
+
+.order-confirmation__note {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 28px 0 0;
+}
+
+.order-confirmation__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.order-confirmation__btn {
+  display: block;
+  text-align: center;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.order-confirmation__btn--primary {
+  background: var(--brown-medium);
+  color: #fff;
+}
+
+.order-confirmation__btn--primary:hover {
+  background: var(--brown-light);
+}
+
+.order-confirmation__btn--ghost {
+  background: transparent;
+  color: var(--brown-medium);
+  border: 2px solid var(--brown-light);
+}
+
+.order-confirmation__btn--ghost:hover {
+  border-color: var(--brown-medium);
+  background: var(--cream-light);
+}
+
+@media (max-width: 480px) {
+  .order-confirmation__card {
+    padding: 32px 22px;
+  }
+
+  .order-confirmation__title {
+    font-size: 26px;
+  }
+}
